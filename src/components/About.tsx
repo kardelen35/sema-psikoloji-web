@@ -67,7 +67,7 @@ const About = () => {
                 <CardContent className="p-6 text-center">
                   <div className="space-y-4">
                     <div>
-                      <div className="text-3xl font-bold text-primary">4+</div>
+                      <div className="text-3xl font-bold text-primary">6+</div>
                       <div className="text-sm text-muted-foreground">Yıl Deneyim</div>
                     </div>
                     <div>

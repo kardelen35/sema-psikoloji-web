@@ -124,8 +124,7 @@ const Contact = () => {
                 <CardContent className="p-0">
                   <div className="h-96 w-full rounded-b-lg overflow-hidden">
                     <iframe
-                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3124.989!2d27.142826!3d38.423734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14bbd9627c88c55b%3A0x9a56e88e69b23dcf!2sKonak%2C%20%C4%B0zmir!5e0!3m2!1str!2str!4v1632147852432!5m2!1str!2str"
-                      width="100%"
+src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3109.347214485628!2d26.9738842!3d38.80159679999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14ba31eb908191cb%3A0x19e681f19f40b218!2s%C5%9Eema%20Psikoloji!5e0!3m2!1str!2str!4v1758279063307!5m2!1str!2str"                      width="100%"
                       height="100%"
                       style={{ border: 0 }}
                       allowFullScreen

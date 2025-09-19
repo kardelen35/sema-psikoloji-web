@@ -56,7 +56,7 @@ const Hero = () => {
                 Randevu Al
               </Button>
               <Button 
-                onClick={() => window.open('https://wa.me/905551234567', '_blank')}
+                onClick={() => window.open('https://wa.me/905075572040', '_blank')}
                 variant="outline"
                 size="lg"
                 className="border-primary text-primary hover:bg-primary hover:text-primary-foreground"
@@ -71,7 +71,7 @@ const Hero = () => {
             <div className="relative bg-gradient-primary rounded-3xl shadow-medium overflow-hidden">
               <div className="aspect-square lg:aspect-[4/5] bg-therapy-light/20 flex items-center justify-center">
                 <img 
-                  src="/logo-sema-psikoloji.jpg" 
+                  src="https://api.doktorsitesi.com/media/cache/profil_500_webp/uploads/profile_self_image/ed3ed221eed2d28bcb3e34336f7dd9eb.webp" 
                   alt="Şema Psikoloji - Profesyonel Psikolojik Destek" 
                   className="w-3/4 h-auto opacity-90"
                 />
@@ -80,17 +80,12 @@ const Hero = () => {
               {/* Floating Cards */}
               <div className="absolute -top-6 -right-6 bg-background rounded-2xl shadow-soft p-4 border border-border">
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-primary">4+</div>
+                  <div className="text-2xl font-bold text-primary">6+</div>
                   <div className="text-xs text-muted-foreground">Yıl Deneyim</div>
                 </div>
               </div>
               
-              <div className="absolute -bottom-6 -left-6 bg-background rounded-2xl shadow-soft p-4 border border-border">
-                <div className="text-center">
-                  <div className="text-2xl font-bold text-primary">100+</div>
-                  <div className="text-xs text-muted-foreground">Başarılı Süreç</div>
-                </div>
-              </div>
+             
             </div>
           </div>
         </div>
