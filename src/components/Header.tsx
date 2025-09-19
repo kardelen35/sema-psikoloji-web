@@ -52,28 +52,9 @@ const Header = () => {
             </button>
           </nav>
 
-          {/* WhatsApp Button & Mobile Menu */}
-          <div className="flex items-center space-x-4">
-            <Button 
-              onClick={() => window.open('https://wa.me/905551234567', '_blank')}
-              className="bg-primary hover:bg-primary-dark text-primary-foreground"
-              size="sm"
-            >
-              <Phone className="w-4 h-4 mr-2" />
-              <span className="hidden sm:inline">WhatsApp</span>
-            </Button>
-            
-            {/* Mobile Menu Toggle */}
-            <button
-              className="md:hidden p-2"
-              onClick={() => setIsMenuOpen(!isMenuOpen)}
-            >
-              {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-            </button>
-          </div>
+   
         </div>
 
-        {/* Mobile Navigation */}
         {isMenuOpen && (
           <nav className="md:hidden mt-4 pb-4 border-t border-border pt-4">
             <div className="flex flex-col space-y-3">
