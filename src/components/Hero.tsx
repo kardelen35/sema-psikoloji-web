@@ -153,7 +153,7 @@ const Hero = () => {
                 </div>
               </div>
 
-              <div className="absolute bottom-5 left-5">
+              {/* <div className="absolute bottom-5 left-5">
                 <div className="flex items-center gap-3 rounded-2xl border border-emerald-200 bg-white/85 px-4 py-3 shadow-md backdrop-blur">
                   <div className="flex h-9 w-9 items-center justify-center rounded-full bg-emerald-100">
                     <Brain className="h-5 w-5 text-emerald-700" />
@@ -163,7 +163,7 @@ const Hero = () => {
                     <p className="text-sm font-semibold text-emerald-900">EMDR &amp; BDT &amp; Şema</p>
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
 
             <div aria-hidden className="mx-auto mt-6 h-4 w-4/5 rounded-full bg-emerald-900/10 blur-md" />
