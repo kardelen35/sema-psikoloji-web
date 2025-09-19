@@ -1,15 +1,8 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
-import { Textarea } from '@/components/ui/textarea';
 import { MapPin, Phone, Mail, Clock, MessageCircle } from 'lucide-react';
 
 const Contact = () => {
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Mock form submission - would integrate with backend
-    alert('Mesajınız alındı! En kısa sürede size dönüş yapacağım.');
-  };
 
   return (
     <section id="iletisim" className="py-20 bg-background">
@@ -117,95 +110,53 @@ const Contact = () => {
               </div>
             </div>
 
-            {/* Contact Form */}
+            {/* Google Maps */}
             <div>
               <Card className="border-border shadow-medium">
                 <CardHeader>
                   <CardTitle className="text-2xl font-bold text-foreground">
-                    Mesaj Gönder
+                    Konum
                   </CardTitle>
                   <p className="text-muted-foreground">
-                    Aşağıdaki formu doldurarak bana ulaşabilirsiniz. Size en kısa sürede geri dönüş yapacağım.
+                    Ofis konumumuzu haritada görüntüleyebilirsiniz. Randevu almak için WhatsApp üzerinden iletişime geçin.
                   </p>
                 </CardHeader>
-                <CardContent>
-                  <form onSubmit={handleSubmit} className="space-y-6">
-                    <div className="grid sm:grid-cols-2 gap-4">
-                      <div>
-                        <label htmlFor="name" className="block text-sm font-medium text-foreground mb-2">
-                          Adınız Soyadınız
-                        </label>
-                        <Input 
-                          id="name"
-                          type="text" 
-                          required 
-                          className="border-input focus:border-primary"
-                          placeholder="Adınızı yazın"
-                        />
-                      </div>
-                      <div>
-                        <label htmlFor="phone" className="block text-sm font-medium text-foreground mb-2">
-                          Telefon
-                        </label>
-                        <Input 
-                          id="phone"
-                          type="tel" 
-                          required 
-                          className="border-input focus:border-primary"
-                          placeholder="Telefon numaranız"
-                        />
-                      </div>
-                    </div>
-
-                    <div>
-                      <label htmlFor="email" className="block text-sm font-medium text-foreground mb-2">
-                        E-posta
-                      </label>
-                      <Input 
-                        id="email"
-                        type="email" 
-                        required 
-                        className="border-input focus:border-primary"
-                        placeholder="E-posta adresiniz"
-                      />
-                    </div>
-
-                    <div>
-                      <label htmlFor="subject" className="block text-sm font-medium text-foreground mb-2">
-                        Konu
-                      </label>
-                      <Input 
-                        id="subject"
-                        type="text" 
-                        required 
-                        className="border-input focus:border-primary"
-                        placeholder="Mesaj konusu"
-                      />
-                    </div>
-
-                    <div>
-                      <label htmlFor="message" className="block text-sm font-medium text-foreground mb-2">
-                        Mesajınız
-                      </label>
-                      <Textarea 
-                        id="message"
-                        required 
-                        rows={4}
-                        className="border-input focus:border-primary"
-                        placeholder="Mesajınızı buraya yazın..."
-                      />
-                    </div>
-
-                    <Button 
-                      type="submit"
-                      className="w-full bg-primary hover:bg-primary-dark text-primary-foreground shadow-medium"
-                      size="lg"
-                    >
-                      Mesaj Gönder
-                    </Button>
-                  </form>
+                <CardContent className="p-0">
+                  <div className="h-96 w-full rounded-b-lg overflow-hidden">
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3124.989!2d27.142826!3d38.423734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14bbd9627c88c55b%3A0x9a56e88e69b23dcf!2sKonak%2C%20%C4%B0zmir!5e0!3m2!1str!2str!4v1632147852432!5m2!1str!2str"
+                      width="100%"
+                      height="100%"
+                      style={{ border: 0 }}
+                      allowFullScreen
+                      loading="lazy"
+                      referrerPolicy="no-referrer-when-downgrade"
+                      title="Şema Psikoloji Ofis Konumu"
+                    />
+                  </div>
                 </CardContent>
               </Card>
+              
+              {/* Quick Contact Actions */}
+              <div className="mt-6 grid sm:grid-cols-2 gap-4">
+                <Button 
+                  onClick={() => window.open('https://wa.me/905551234567', '_blank')}
+                  className="w-full bg-green-600 hover:bg-green-700 text-white shadow-medium"
+                  size="lg"
+                >
+                  <MessageCircle className="w-5 h-5 mr-2" />
+                  WhatsApp ile İletişim
+                </Button>
+                <Button 
+                  onClick={() => window.open('tel:+905551234567', '_blank')}
+                  variant="outline"
+                  className="w-full border-primary text-primary hover:bg-primary hover:text-primary-foreground"
+                  size="lg"
+                >
+                  <Phone className="w-5 h-5 mr-2" />
+                  Telefon Ara
+                </Button>
+              </div>
             </div>
           </div>
         </div>
